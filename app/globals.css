@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #faf8f3;
+    color: #1a1410;
+    font-feature-settings: 'kern' 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-bold;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  .section {
+    @apply py-20 px-4 md:px-8 lg:px-16;
+  }
+  
+  .heading-lg {
+    @apply font-serif text-4xl md:text-6xl font-bold;
+  }
+  
+  .heading-md {
+    @apply font-serif text-2xl md:text-3xl font-bold;
+  }
+  
+  .text-accent {
+    color: #d4af37;
+  }
+}
